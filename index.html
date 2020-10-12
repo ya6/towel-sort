@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const matrix = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+    ];
+
+//  function towelSort (matrix) {
+//      console.log('#towelSort');
+//     if(matrix === undefined) return []; 
+//      console.log(matrix);
+//  let arr = [];
+ 
+//   return  arr.concat(...matrix);
+// }
+
+function towelSort (matrix) {
+     console.log('#towelSort');
+    if(matrix === undefined) return [];
+    matrix.map((el, i) => { el = i % 2 ===0  ? el : el.reverse()      
+    });
+    console.log(matrix);
+ let arr = [];
+ 
+  return  arr.concat(...matrix);
+}
+console.log(towelSort(matrix));
+
+    </script>
+</body>
+</html>
